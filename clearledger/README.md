@@ -56,8 +56,8 @@ not silently manufactured by reconciliation to make a mismatch disappear.
 ## API examples
 
 ```bash
-curl http://127.0.0.1:8765/api/ledger/state
-curl -X POST http://127.0.0.1:8765/api/ledger/incident
+curl http://127.0.0.1:8000/api/ledger/state
+curl -X POST http://127.0.0.1:8000/api/ledger/incident
 ```
 
 Use the incident response's event ID in `POST /api/ledger/events/{event_id}/retry`.

@@ -1,0 +1,13 @@
+{
+  "url": "https://dat-clearledger.vercel.app",
+  "checks": [
+    "anonymous desktop and mobile access without login",
+    "ledger visitor isolation and same-tab refresh persistence",
+    "public ledger incident and recovery",
+    "independent session reset",
+    "responsive layout and no JavaScript exceptions"
+  ],
+  "passed": 5,
+  "browser_errors": [],
+  "authentication": "none; two fresh browser contexts"
+}

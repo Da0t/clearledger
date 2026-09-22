@@ -1,5 +1,7 @@
 # ClearLedger
 
+**[Public demo](https://dat-clearledger.vercel.app)** · [Source](https://github.com/Da0t/clearledger)
+
 An auditable money-movement application with an append-only journal, idempotent payment processing, failure recovery, bounded refunds, reservations, and provider reconciliation.
 
 This is an independent application with its own source repository, API, UI, tests, CI, and deployment. All data and funds are synthetic.
@@ -26,3 +28,11 @@ No Java runtime or trading application is required.
 ## Engineering details
 
 See [ClearLedger engine documentation](clearledger/README.md) and the tests for correctness guarantees and limitations.
+
+## Browser verification
+
+Install `playwright` and run `python -m playwright install chromium`, then `python scripts/check_public_browser.py --url https://dat-clearledger.vercel.app`. This checks anonymous access, visitor isolation, working workflows, and mobile layout.
+
+## Inspiration
+
+Financial transaction design is informed by [TigerBeetle](https://github.com/tigerbeetle/tigerbeetle). No third-party application code was copied or forked; these projects are not dependencies or affiliates.
